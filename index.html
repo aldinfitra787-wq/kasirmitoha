@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#D7261E">
+  <meta name="description" content="DapoerMitoha Seblak Cloud POS — kasir, stok, laporan, tutup shift, dan dokumen cetak berbasis Google Sheets.">
+  <title>DapoerMitoha POS</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%23D7261E'/%3E%3Cpath d='M9.5 14.5A2 2 0 0 0 11.5 12.5c0-1-.4-1.6-.8-2.4-.9-1.7-.2-3.2 1.6-4.8.4 2 1.6 3.9 3.2 5.2 1.6 1.3 2.4 2.8 2.4 4.4a5.6 5.6 0 1 1-11.2 0c0-1 .3-1.8.8-2.6.2 1.1 1.1 2.2 2 2.2z' fill='none' stroke='white' stroke-width='1.6'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://script.google.com">
+  <link rel="preconnect" href="https://script.googleusercontent.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+  <style>#splash{position:fixed;inset:0;display:grid;place-items:center;background:#FFF8F0;z-index:100;font:600 15px system-ui;color:#5C403C}#splash b{display:block;width:56px;height:56px;margin:0 auto 14px;border-radius:14px;background:#D7261E;animation:pulse 1s infinite alternate}@keyframes pulse{to{transform:scale(.9);opacity:.7}}</style>
+</head>
+<body>
+  <div id="splash"><div><b></b>Menyiapkan kasir…</div></div>
+  <div id="shell" class="app" hidden></div>
+  <div id="fullhost" hidden></div>
+  <div id="toasts" class="toasts" aria-live="polite"></div>
+  <noscript><p style="padding:24px">Aplikasi kasir ini membutuhkan JavaScript.</p></noscript>
+
+  <script src="js/config.js" defer></script>
+  <script src="js/icons.js" defer></script>
+  <script src="js/core.js" defer></script>
+  <script src="js/charts.js" defer></script>
+  <script src="js/shell.js" defer></script>
+  <script src="js/pages.js" defer></script>
+  <script src="js/pages-admin.js" defer></script>
+</body>
+</html>
